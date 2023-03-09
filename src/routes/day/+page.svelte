@@ -2,7 +2,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import Card from '$lib/components/Card.svelte';
 
-	let content: string = '';
+	let content = '';
 
 	const test = (mood: string) => {
 		console.log(mood);
