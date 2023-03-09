@@ -5,11 +5,6 @@
 
 	let month = dayjs().month();
 
-	const firstDayOfMonth = () => {
-		let firstDay = parseInt(dayjs().month(month).startOf('month').format('d'));
-		return firstDay;
-	};
-
 	$: firstDay = parseInt(dayjs().month(month).startOf('month').format('d'));
 
 	const changeMonth = (delta: number) => {
